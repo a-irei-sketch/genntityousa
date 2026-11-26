@@ -1,0 +1,450 @@
+{
+ "fields": {
+  "reporter": {
+   "type": "text",
+   "label": "報告者氏名"
+  },
+  "project": {
+   "type": "text",
+   "label": "案件名"
+  },
+  "building": {
+   "type": "select_one_from_file facilities.csv",
+   "label": "施設名"
+  },
+  "building_other": {
+   "type": "text",
+   "label": "施設名（一覧にない場合）"
+  },
+  "floor": {
+   "type": "select_one floors",
+   "label": "階"
+  },
+  "rec_type": {
+   "type": "select_one rec_types",
+   "label": "記録の種類"
+  },
+  "survey_dt": {
+   "type": "dateTime",
+   "label": "調査日時"
+  },
+  "location": {
+   "type": "geopoint",
+   "label": "調査位置"
+  },
+  "room_no": {
+   "type": "text",
+   "label": "通し番号"
+  },
+  "room_photo": {
+   "type": "image",
+   "label": "室名札・入口の写真"
+  },
+  "room_name": {
+   "type": "text",
+   "label": "部屋名（室名札）"
+  },
+  "room_use": {
+   "type": "select_one uses",
+   "label": "用途"
+  },
+  "room_use_other": {
+   "type": "text",
+   "label": "用途（その他）"
+  },
+  "depth_m": {
+   "type": "decimal",
+   "label": "縦（m）"
+  },
+  "width_m": {
+   "type": "decimal",
+   "label": "横（m）"
+  },
+  "area_m2": {
+   "type": "decimal",
+   "label": "面積（m²）"
+  },
+  "ceil_h_m": {
+   "type": "decimal",
+   "label": "天井高（m）"
+  },
+  "ceil_type": {
+   "type": "select_one ceil_types",
+   "label": "天井材"
+  },
+  "sw_circuits": {
+   "type": "integer",
+   "label": "スイッチ回路数"
+  },
+  "hours_day": {
+   "type": "decimal",
+   "label": "1日の点灯時間（h）"
+  },
+  "days_year": {
+   "type": "integer",
+   "label": "年間点灯日数"
+  },
+  "annual_h": {
+   "type": "calculate",
+   "label": "年間点灯時間（h）"
+  },
+  "ceil_photo": {
+   "type": "image",
+   "label": "天井見上げ写真（器具に印を付ける）"
+  },
+  "ceil_photo2": {
+   "type": "image",
+   "label": "天井見上げ写真（2枚目・広い部屋用）"
+  },
+  "fx_type": {
+   "type": "select_one_from_file fixture_types.csv",
+   "label": "器具タイプ"
+  },
+  "fx_shape": {
+   "type": "select_one shapes",
+   "label": "形状"
+  },
+  "fx_mount": {
+   "type": "select_one mounts",
+   "label": "取付方法"
+  },
+  "fx_method": {
+   "type": "select_one count_methods",
+   "label": "数え方"
+  },
+  "fx_cols": {
+   "type": "integer",
+   "label": "列数"
+  },
+  "fx_rows": {
+   "type": "integer",
+   "label": "行数"
+  },
+  "fx_qty_in": {
+   "type": "integer",
+   "label": "台数"
+  },
+  "fx_qty": {
+   "type": "calculate",
+   "label": "台数（集計用）"
+  },
+  "fx_lit": {
+   "type": "select_one lit_states",
+   "label": "点灯状況"
+  },
+  "fx_model": {
+   "type": "text",
+   "label": "メーカー・型番（銘板）"
+  },
+  "fx_photo": {
+   "type": "image",
+   "label": "器具の写真"
+  },
+  "fx_plate": {
+   "type": "image",
+   "label": "銘板の写真"
+  },
+  "fx_lamp_kind": {
+   "type": "select_one lamp_kinds",
+   "label": "ランプ区分"
+  },
+  "fx_lamp_spec": {
+   "type": "text",
+   "label": "ランプ仕様（形式・色・灯数）"
+  },
+  "fx_w_field": {
+   "type": "decimal",
+   "label": "銘板の消費電力（W/台）"
+  },
+  "fx_height_m": {
+   "type": "decimal",
+   "label": "設置高さ（m）"
+  },
+  "fx_aerial": {
+   "type": "select_one aerial",
+   "label": "高所作業の要否"
+  },
+  "fx_removal": {
+   "type": "select_multiple removal",
+   "label": "既存設備の撤去条件"
+  },
+  "fx_removal_note": {
+   "type": "text",
+   "label": "撤去条件の補足"
+  },
+  "fx_cond": {
+   "type": "select_one conditions",
+   "label": "老朽度・劣化"
+  },
+  "fx_defects": {
+   "type": "select_multiple defects",
+   "label": "劣化の内容"
+  },
+  "fx_w_master": {
+   "type": "calculate",
+   "label": "マスタ消費電力（W/台）"
+  },
+  "fx_w_old": {
+   "type": "calculate",
+   "label": "既設消費電力（W/台）"
+  },
+  "fx_key": {
+   "type": "calculate",
+   "label": "置換キー"
+  },
+  "fx_led": {
+   "type": "calculate",
+   "label": "LED候補品番"
+  },
+  "fx_w_led": {
+   "type": "calculate",
+   "label": "LED消費電力（W/台）"
+  },
+  "fx_kwh": {
+   "type": "calculate",
+   "label": "年間削減電力量（kWh）"
+  },
+  "fx_note": {
+   "type": "text",
+   "label": "特記"
+  },
+  "room_qty": {
+   "type": "calculate",
+   "label": "器具台数（部屋計）"
+  },
+  "room_kwh": {
+   "type": "calculate",
+   "label": "年間削減電力量（部屋計 kWh）"
+  },
+  "emergency": {
+   "type": "select_one yn3",
+   "label": "非常灯・誘導灯の有無"
+  },
+  "lux": {
+   "type": "decimal",
+   "label": "平均照度（lx）"
+  },
+  "room_light": {
+   "type": "select_one light_levels",
+   "label": "照明状況（明るさの体感）"
+  },
+  "room_issue": {
+   "type": "text",
+   "label": "施設利用上・更新上の課題"
+  },
+  "room_status": {
+   "type": "select_one statuses",
+   "label": "調査状態"
+  },
+  "door_count": {
+   "type": "integer",
+   "label": "扉の数（この階・現地カウント）"
+  },
+  "declared_rooms": {
+   "type": "integer",
+   "label": "施設側の申告部屋数"
+  },
+  "floor_photo": {
+   "type": "image",
+   "label": "避難案内図・フロア案内の写真"
+  },
+  "floor_sketch": {
+   "type": "image",
+   "label": "階の簡易スケッチ"
+  },
+  "floor_note": {
+   "type": "text",
+   "label": "メモ"
+  },
+  "site_name": {
+   "type": "text",
+   "label": "対象地名・場所"
+  },
+  "rp_cat": {
+   "type": "select_one rp_cats",
+   "label": "区分"
+  },
+  "rp_photo": {
+   "type": "image",
+   "label": "該当写真"
+  },
+  "rp_photo2": {
+   "type": "image",
+   "label": "該当写真（2枚目）"
+  },
+  "rp_photo3": {
+   "type": "image",
+   "label": "該当写真（3枚目）"
+  },
+  "rp_memo": {
+   "type": "text",
+   "label": "現場メモ"
+  },
+  "rp_audio": {
+   "type": "audio",
+   "label": "音声"
+  },
+  "rp_loc": {
+   "type": "geopoint",
+   "label": "撮影場所"
+  },
+  "rp_comment": {
+   "type": "text",
+   "label": "コメント"
+  }
+ },
+ "choices": {
+  "floors": {
+   "B2": "B2",
+   "B1": "B1",
+   "1F": "1F",
+   "2F": "2F",
+   "3F": "3F",
+   "4F": "4F",
+   "5F": "5F",
+   "6F": "6F",
+   "7F": "7F",
+   "8F": "8F",
+   "9F": "9F",
+   "10F": "10F",
+   "11F": "11F",
+   "12F": "12F",
+   "13F": "13F",
+   "14F": "14F",
+   "15F": "15F",
+   "RF": "RF",
+   "PH": "PH",
+   "OUT": "屋外"
+  },
+  "rec_types": {
+   "room": "部屋の調査",
+   "floor": "階の確認",
+   "site": "現場写真報告"
+  },
+  "uses": {
+   "office": "事務室",
+   "meeting": "会議室",
+   "classroom": "教室",
+   "corridor": "廊下",
+   "stairs": "階段",
+   "toilet": "トイレ",
+   "storage": "倉庫",
+   "machine": "機械室・電気室",
+   "locker": "更衣室",
+   "pantry": "給湯室",
+   "entrance": "玄関・ホール",
+   "gym": "体育館",
+   "parking": "駐車場",
+   "outdoor": "屋外",
+   "other": "その他"
+  },
+  "ceil_types": {
+   "board": "岩綿吸音板",
+   "plaster": "石膏ボード",
+   "system": "システム天井",
+   "exposed": "直天井（躯体現し）",
+   "other": "その他"
+  },
+  "mounts": {
+   "direct": "直付",
+   "recessed": "埋込",
+   "pendant": "吊下",
+   "wall": "壁付",
+   "pole": "ポール",
+   "stand": "架台・スタンド"
+  },
+  "shapes": {
+   "inverted_fuji": "ベースライト（逆富士）",
+   "trough": "ベースライト（トラフ）",
+   "open_bottom": "ベースライト（下面開放・埋込）",
+   "louver": "ベースライト（ルーバー・カバー付）",
+   "downlight": "ダウンライト",
+   "ceiling": "シーリングライト",
+   "bracket": "ブラケット",
+   "pendant": "ペンダント",
+   "highbay": "高天井用（ハイベイ）",
+   "flood": "投光器",
+   "street": "街路灯・防犯灯",
+   "exit": "誘導灯",
+   "emergency": "非常用照明",
+   "other": "その他"
+  },
+  "lamp_kinds": {
+   "fl": "蛍光灯（直管）",
+   "fhf": "蛍光灯（Hf）",
+   "compact": "蛍光灯（コンパクト・環形）",
+   "hg": "水銀灯",
+   "mh": "メタルハライド",
+   "hps": "高圧ナトリウム",
+   "incandescent": "白熱灯",
+   "halogen": "ハロゲン",
+   "led": "LED",
+   "other": "その他"
+  },
+  "aerial": {
+   "none": "不要（手が届く）",
+   "ladder": "脚立",
+   "tower": "ローリングタワー",
+   "lift": "高所作業車",
+   "scaffold": "足場"
+  },
+  "removal": {
+   "fixture": "器具ごと交換",
+   "lamp_only": "ランプ交換（直結工事）",
+   "ceiling_repair": "天井補修が必要",
+   "asbestos": "アスベスト含有の確認が必要",
+   "pcb": "PCB含有安定器の確認が必要",
+   "pole": "ポール・架台の補修が必要",
+   "disposal": "産廃処理（水銀含有）",
+   "other": "その他"
+  },
+  "conditions": {
+   "good": "良好",
+   "slight": "やや劣化",
+   "poor": "劣化",
+   "severe": "著しい劣化"
+  },
+  "defects": {
+   "yellow": "カバー黄変",
+   "rust": "錆・腐食",
+   "crack": "破損・割れ",
+   "flicker": "ちらつき",
+   "unlit": "不点",
+   "noise": "安定器の異音",
+   "burn": "焦げ・変色",
+   "dirt": "汚れ・虫の侵入",
+   "salt": "塩害"
+  },
+  "light_levels": {
+   "enough": "十分",
+   "bit_dark": "やや暗い",
+   "dark": "暗い",
+   "too_bright": "明るすぎ"
+  },
+  "count_methods": {
+   "each": "個別に数える",
+   "array": "配列（列×行）"
+  },
+  "lit_states": {
+   "lit": "点灯",
+   "unlit": "不点",
+   "missing": "ランプ欠品"
+  },
+  "yn3": {
+   "yes": "有",
+   "no": "無",
+   "unknown": "未確認"
+  },
+  "statuses": {
+   "done": "調査済",
+   "check": "要確認"
+  },
+  "rp_cats": {
+   "action": "要対応",
+   "caution": "施工上の注意",
+   "watch": "継続観察",
+   "good": "良好",
+   "other": "その他"
+  }
+ }
+}

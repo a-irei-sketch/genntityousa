@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "led_survey123": {
+      "command": "C:\\Users\\<ユーザー名>\\led_survey_system\\mcp_server\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "led_survey_mcp.server"],
+      "env": {
+        "PYTHONPATH": "C:\\Users\\<ユーザー名>\\led_survey_system\\mcp_server",
+        "LED_SURVEY_WORKDIR": "C:\\Users\\<ユーザー名>\\Documents\\LED現況調査",
+        "ARCGIS_PROFILE": "sho_tech",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

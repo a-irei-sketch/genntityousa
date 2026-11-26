@@ -1,0 +1,24 @@
+﻿name,label,lamp,lamps,ballast,watt,shape
+FL20x1_G,直管20形×1（グロー）,FL20,1,グロー,24,line
+FL20x2_G,直管20形×2（グロー）,FL20,2,グロー,46,line
+FL40x1_G,直管40形×1（グロー）,FL40,1,グロー,44,line
+FL40x2_G,直管40形×2（グロー）,FL40,2,グロー,86,line
+FLR40x1_R,直管40形×1（ラピッド）,FLR40,1,ラピッド,48,line
+FLR40x2_R,直管40形×2（ラピッド）,FLR40,2,ラピッド,88,line
+FHF32x1_H,Hf32形×1（高出力）,FHF32,1,Hf,50,line
+FHF32x2_H,Hf32形×2（高出力）,FHF32,2,Hf,90,line
+FHF32x2_S,Hf32形×2（定格出力）,FHF32,2,Hf,66,line
+FDL27x1,コンパクト形ダウンライト FDL27×1,FDL27,1,-,30,round
+FDL27x2,コンパクト形ダウンライト FDL27×2,FDL27,2,-,60,round
+IL60_DL,白熱ダウンライト 60W,白熱60W,1,-,60,round
+FCL30_32,環形 FCL30+32,FCL,2,-,66,round
+HF250,水銀灯 250W,HF250,1,安定器,265,high
+HF400,水銀灯 400W,HF400,1,安定器,420,high
+EXIT_FL,誘導灯（蛍光灯）,FL20,1,-,22,line
+LED_EXIST,既設LED（更新対象外）,LED,1,-,0,line
+MH400_FL,メタルハライド投光器 400W,MH400,1,安定器,430,high
+MH1000_FL,メタルハライド投光器 1kW,MH1000,1,安定器,1060,high
+HL500_FL,ハロゲン投光器 500W,J500,1,-,500,high
+NH360,高圧ナトリウム灯 360W,NH360,1,安定器,380,high
+EMG_IL,非常用照明（白熱）,白熱,1,-,30,round
+OTHER,その他（特記に記入）,-,1,-,,line

@@ -1,0 +1,16 @@
+﻿name,label,hours_day,days_year
+office,事務室,10,245
+meeting,会議室,4,245
+classroom,教室,8,200
+corridor,廊下,12,245
+stairs,階段,12,245
+toilet,トイレ,10,245
+storage,倉庫,1,245
+machine,機械室・電気室,1,365
+locker,更衣室,3,245
+pantry,給湯室,3,245
+entrance,玄関・ホール,12,245
+gym,体育館,6,300
+parking,駐車場,24,365
+outdoor,屋外,12,365
+other,その他,8,245
